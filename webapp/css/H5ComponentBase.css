@@ -1,0 +1,13 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-05 18:45:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-07-06 13:32:06
+*/
+/* 基本图文组件对象 */
+.h5_component {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+}

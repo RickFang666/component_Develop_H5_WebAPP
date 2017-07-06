@@ -1,0 +1,19 @@
+/*
+* @Author: Administrator
+* @Date:   2017-07-06 13:41:59
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-07-06 18:24:30
+*/
+/* h5对象的全局样式 */
+.h5 {
+  height: 100%;
+}
+.h5_page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

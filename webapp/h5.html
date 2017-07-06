@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/h5.css">
+    <link rel="stylesheet" href="css/H5ComponentBase.css">
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<body>
+
+</body>
+<script src='js/lib/jquery.js'></script>
+<script src='js/lib/jquery-ui.min.js'></script>
+<script src='js/lib/jquery.fullPage.js'></script>
+
+<script src='js/h5.js'></script>
+<script src='js/H5ComponentBase.js'></script>
+<script>
+  $(function (){
+    var h5 = new H5();
+        h5.addPage('face')
+            .addComponent('logo',{
+              text:'logo',
+              width: 400,
+              height: 100,
+              css:{ backgroundColor:'red',left:50,bottom:0,
+                    opacity:0,
+            },
+              animateIn:{bottom:80,opacity:1},
+              animateOut:{bottom:0,opacity:0},
+              center:true,
+            })
+            .addComponent('slogon',{
+              text:'slogon',
+              width: 400,
+              height: 100,
+              css:{ backgroundColor:'red',top:400},
+              center:true,
+            })
+        .addPage('desc')
+            .addComponent('caption',{
+              text:'核心理念',
+              width: 400,
+              height: 100,
+              css:{ backgroundColor:'green',top:200},
+              center:true,
+            })
+        .addPage('page-3')
+            .addComponent('caption',{
+              text:'课程分布方向',
+              width: 400,
+              height: 100,
+              css:{ backgroundColor:'green',top:200},
+              center:true,
+            })
+        .loader();
+
+  })
+
+
+</script>
